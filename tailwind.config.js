@@ -10,6 +10,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'league-spartan': ['League Spartan', 'sans-serif'],
+				'libre-baskerville': ['Libre Baskerville', 'serif']
+			},
 			colors: {
 				'primary-dark': '#252831',
 				white: '#E3E3E4',
