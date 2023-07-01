@@ -26,3 +26,10 @@ h6 {
 .quote {
 	font-family: 'Dancing Script', cursive;
 }
+
+.custom-word-limit {
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 3; /* Adjust the number of lines as per your requirement */
+	-webkit-box-orient: vertical;
+}

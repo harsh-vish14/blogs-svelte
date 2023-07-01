@@ -3,12 +3,12 @@
 </script>
 
 <div
-	class="font-bold md:text-5xl xl:text-6xl text-4xl relative flex gap-5 justify-evenly items-center min-h-[60vh] pt-10"
+	class="font-semibold md:text-6xl xl:text-7xl text-4xl relative flex gap-5 justify-evenly items-center min-h-[60vh] pt-10 font-league-spartan"
 >
 	<div class="sm:w-1/2 w-full px-5 sm:px-0">
-		<h1>
-			Hand crafted Blogs Related to
-			<div class="relative w-fit">
+		<h1 class="sm:text-left text-center">
+			Hand Crafted Blogs Related to
+			<div class="relative w-fit m-auto sm:m-0">
 				<div>Technology</div>
 				<svg
 					style="width: -webkit-fill-available;"
