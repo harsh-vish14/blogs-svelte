@@ -1,6 +1,7 @@
 <script>
 	import '../app.css';
 	import Navbar from '../components/navbar.svelte';
+	import Footer from '../components/footer.svelte';
 </script>
 
 <head>
@@ -10,4 +11,5 @@
 <div class="mx-auto md:px-8 px-0" style="width: 100%; max-width:83.5rem">
 	<Navbar />
 	<slot />
+	<Footer />
 </div>
