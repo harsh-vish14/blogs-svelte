@@ -23,13 +23,8 @@
 
 <Header />
 
-<section class="flex">
-	<PostCard {post} />
-	<!-- {#each data as post}
-		<div class="post">
-			<a href={slugGenerator(post.title)} class="title">{post.title}</a>
-			<p class="date">{formatDate(post.date)}</p>
-			<p class="description">{post.description}</p>
-		</div>
-	{/each} -->
+<section class="flex gap-x-10 my-10">
+	{#each data as post}
+		<PostCard {post} />
+	{/each}
 </section>

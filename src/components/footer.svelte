@@ -5,7 +5,7 @@
 </script>
 
 <div
-	class="p-10 relative -z-50 h-96 mt-20 flex justify-center items-center"
+	class="p-10 relative -z-50 h-96 mt-36 flex justify-center items-center"
 	style="text-wrap: balance"
 >
 	<div class="font-blod text-4xl w-[600px] text-center quote leading-snug my-10">
