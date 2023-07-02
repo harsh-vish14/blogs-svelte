@@ -2,6 +2,15 @@
 	import '../app.css';
 	import Navbar from '../components/navbar.svelte';
 	import Footer from '../components/footer.svelte';
+	import PageTransition from './transition.svelte';
+
+	export async function load({ url }) {
+		return {
+			url: url.pathname
+		};
+	}
+
+	export let data;
 </script>
 
 <head>
@@ -10,6 +19,10 @@
 
 <div class="mx-auto md:px-8 px-0" style="width: 100%; max-width:83.5rem">
 	<Navbar />
-	<slot />
+	<main>
+		<PageTransition url={data.url}>
+			<slot />
+		</PageTransition>
+	</main>
 	<Footer />
 </div>

@@ -11,10 +11,75 @@ published: true
 
 ## Markdown
 
-Hey friends! 👋
+Certainly! Here's a sample Markdown (`.md`) file that you can use for testing:
 
-```js
-function greet(name: string) {
-	console.log(`Hey ${name}! 👋`);
-}
+````markdown
+# Sample Markdown File
+
+This is a sample Markdown file for testing purposes.
+
+## Heading 2
+
+Here's some **bold text** and _italic text_.
+
+### Heading 3
+
+A list of items:
+
+- Item 1
+- Item 2
+- Item 3
+
+#### Heading 4
+
+An ordered list:
+
+1. First item
+2. Second item
+3. Third item
+
+##### Heading 5
+
+A code snippet:
+
+```python
+print("Hello, World!")
 ```
+````
+
+###### Heading 6
+
+A link to [OpenAI](https://openai.com).
+
+> This is a blockquote.
+
+And that's it! Feel free to modify this Markdown file and experiment with different Markdown syntax and elements.
+
+```
+
+Copy the above content into a plain text file and save it with the `.md` extension (e.g., `sample.md`). You can then open the Markdown file in any Markdown editor or viewer to see how it renders. It contains various Markdown elements such as headings, bold/italic text, lists, code snippets, links, blockquotes, etc.
+
+Feel free to modify the content or structure of the Markdown file to suit your testing needs.
+```
+
+Certainly! Here's the continuation of the sample Markdown file:
+
+```markdown
+print("Continuing the code snippet...")
+
+# More code here
+
+def some_function():
+pass
+```
+
+###### Heading 6
+
+A table:
+
+| Column 1 | Column 2 |
+| -------- | -------- |
+| Cell 1   | Cell 2   |
+| Cell 3   | Cell 4   |
+
+And that's it! This is the end of the sample Markdown file. Feel free to continue modifying and experimenting with it.

@@ -20,7 +20,7 @@
 
 <Header />
 
-<section class="flex gap-x-10 my-10">
+<section class="flex gap-x-10 my-10 flex-wrap justify-center">
 	{#each data as post}
 		<PostCard {post} />
 	{/each}
