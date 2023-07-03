@@ -8,6 +8,7 @@ categories:
   - HTML
   - CSS
   - JS
+  - Bootstrap
 published: true
 postLink: 'https://github.com/harsh-vish14/blogs-svelte/blob/master/src/posts/todo-web-app.md'
 ---
