@@ -1,9 +1,9 @@
 <script>
-	import { formatDate, slugGenerator } from '$lib/utils';
+	import { formatDate } from '$lib/utils';
 	export let post;
 </script>
 
-<a href={slugGenerator(post.title)} class="w-fit">
+<a href={post.slug} class="w-fit">
 	<div
 		class="p-3 border border-[#2C303A] hover:bg-[#2C303A] transition-all max-w-sm min-w-[300px] rounded-md font-league-spartan h-[480px]"
 	>

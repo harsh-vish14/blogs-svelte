@@ -1,14 +1,9 @@
 <script>
 	import PostCard from './../components/post_card.svelte';
 	import Header from '../components/header.svelte';
-	import { load } from './+page.js';
 
-	import { onMount } from 'svelte';
-	let data = [];
-	onMount(async () => {
-		let res = await load();
-		data = res.posts;
-	});
+	export let data;
+	console.log(data);
 
 	// data = readMetadataFromMarkdownFiles();
 	// data = fetch("api/posts")
@@ -21,7 +16,7 @@
 <Header />
 
 <section class="flex gap-3 my-10 flex-wrap justify-center">
-	{#each data as post}
+	{#each data.posts as post}
 		<PostCard {post} />
 	{/each}
 </section>

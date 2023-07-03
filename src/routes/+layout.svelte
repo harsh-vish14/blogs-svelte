@@ -3,9 +3,7 @@
 	import Navbar from '../components/navbar.svelte';
 	import Footer from '../components/footer.svelte';
 	import PageTransition from './transition.svelte';
-	// import 'open-props/style';
-	// import 'open-props/normalize';
-	// import 'open-props/buttons';
+
 	import '../blog.css';
 	export async function load({ url }) {
 		return {

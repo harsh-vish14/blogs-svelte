@@ -1,13 +1,7 @@
 import { error } from '@sveltejs/kit';
 
-/** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
 	try {
-		// const response = await fetch(`${config.domain}/api/post/${params.slug}`);
-		// const responseData = await response.json();
-		// console.log({ responseData });
-		// return responseData;
-
 		const post = await import(`../../posts/${params.slug}.md`);
 
 		return {
