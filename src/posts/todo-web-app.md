@@ -9,7 +9,7 @@ categories:
   - CSS
   - JS
 published: true
-postLink: 'https://github.com/harsh-vish14/blogs-svelte/blob/master/src/posts/full-stack-todo-web-app---part-1-(frontend).md'
+postLink: 'https://github.com/harsh-vish14/blogs-svelte/blob/master/src/posts/todo-web-app.md'
 ---
 
 In this `two-part tutorial`, we will be developing a todo application. In Part 1, we will focus on implementing the frontend using `HTML`, `CSS`, and `JavaScript`. Part 2 will cover the backend implementation using [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and [MongoDB](https://www.mongodb.com/).
