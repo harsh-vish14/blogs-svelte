@@ -1,27 +1,26 @@
 <script>
+	import { component } from './../../../.svelte-kit/output/server/nodes/1.js';
 	import { formatDate } from '$lib/utils';
-
 	export let data;
-	console.log(data);
 </script>
 
-<!-- SEO -->
+<!-- SEO  -->
 <svelte:head>
 	<title>{data.meta.title}</title>
 	<meta property="og:type" content="article" />
 	<meta name="description" content={data.meta.description} />
-	<meta name="”robots”" content="index, follow" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<meta name="keywords" content={data.meta.categories.join(' ')} />
 	<meta name="author" content="Harshkumar Vishwakarma" />
 	<meta property="og:title" content={data.meta.title} />
+	<meta content={data.meta.bannerImage} property="og:image" />
 </svelte:head>
 
-<article>
-	<!-- Title -->
+<article class="mx-5">
+	<!-- Title   -->
 	<hgroup class="font-league-spartan">
-		<div class="h-[500px] w-full relative">
+		<div class="h-auto w-full relative">
 			<img src={data.meta.bannerImage} alt="banner image" class="h-full w-full rounded-lg" />
 			<svg
 				width="105"
@@ -42,20 +41,40 @@
 				/>
 			</svg>
 		</div>
-		<h1 class="font-bold text-center text-7xl my-10">{data.meta.title}</h1>
-		<div class="font-normal text-base opacity-90">
-			<p>
-				Written By - <a href="https://harshvish.vercel.app/" class="text-pink"
+		<h1 class="font-bold text-center text-5xl md:text-6xl xl:text-7xl my-10">{data.meta.title}</h1>
+		<div
+			class="font-normal text-lg opacity-90 m-auto"
+			style="max-width: 700px;
+	text-wrap: balance;"
+		>
+			<span>
+				Written By - <a href="https://harshvish.vercel.app/" target="_blank" class="text-pink"
 					>Harshkumar Vishwakarma</a
 				>
-			</p>
-			<p>{formatDate(data.meta.date)}</p>
+			</span><br />
+			<span>{formatDate(data.meta.date)}</span>
 		</div>
 	</hgroup>
-	<div class="flex gap-5 my-10 opacity-60 font-league-spartan">
+	<!-- blog -->
+	<div class="flex gap-5 my-5 mb-10 opacity-60 font-league-spartan blog m-auto">
 		{#each data.meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
 	</div>
-	<!--start work here Post -->
+	<div class="blog m-auto font-league-spartan">
+		<svelte:component this={data.content} />
+	</div>
+	<!-- blog footer -->
+	<div
+		class="m-auto mt-28 flex flex-col gap-8 font-league-spartan text-2xl bg-[#e54efe30] p-5 rounded-md"
+		style="max-width: 700px;
+	text-wrap: balance;"
+	>
+		<div class="font-bold text-4xl">Found A Mistake ?</div>
+		<div>
+			Every post is a Markdown file so contributing is simple as following the link below and
+			pressing the pencil icon inside GitHub to edit it.
+		</div>
+		<div class="blog"><a href="" target="_blank">Link to Github ></a></div>
+	</div>
 </article>

@@ -1,0 +1,86 @@
+.blog {
+	max-width: 700px;
+	text-wrap: balance;
+	transition: 500ms;
+	@apply text-xl;
+}
+h1,
+h2,
+h3 {
+	@apply font-semibold;
+}
+h1 {
+	@apply text-6xl my-5;
+}
+h2 {
+	@apply text-5xl my-5;
+}
+h3 {
+	@apply text-4xl my-5;
+}
+
+li {
+	@apply text-xl my-7 leading-loose;
+}
+li::before {
+	content: '👉🏽';
+}
+
+p {
+	@apply font-normal ml-2 my-5;
+}
+img {
+	@apply rounded-md m-auto;
+}
+pre {
+	@apply p-5 text-lg;
+	overflow: auto;
+}
+blockquote {
+	@apply py-2 px-3 my-3 rounded-md;
+	background-color: #2c303a;
+	position: relative;
+}
+blockquote p {
+	background-color: transparent;
+}
+blockquote::before {
+	content: '';
+	height: 100%;
+	width: 7px;
+	/* background-color: pink; */
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	@apply rounded-l-md bg-pink opacity-80;
+}
+.blog a {
+	position: relative;
+}
+.blog a::before {
+	content: '';
+	height: 7px;
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	@apply bg-pink opacity-90 h-1 -bottom-1;
+	z-index: -10;
+	transition: 0.4s;
+}
+.blog a::before:hover {
+	@apply bg-pink opacity-100 h-5 bottom-0;
+}
+
+p code {
+	background-color: #000000;
+	@apply px-1 py-1 rounded-md;
+	width: fit-content;
+}
+li code {
+	background-color: #000000;
+	@apply px-1 py-1 rounded-md;
+	width: fit-content;
+}
+strong {
+	@apply font-extrabold;
+}

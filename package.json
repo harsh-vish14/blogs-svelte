@@ -12,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/kit": "^1.20.4",
+		"@tailwindcss/typography": "^0.5.9",
 		"autoprefixer": "^10.4.14",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -27,8 +28,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"github-markdown-css": "^5.2.0",
 		"gray-matter": "^4.0.3",
 		"marked": "^5.1.0",
+		"prism-svelte": "^0.5.0",
+		"prismjs": "^1.29.0",
 		"rehype-slug": "^5.1.0",
 		"remark-toc": "^8.0.1",
 		"remark-unwrap-images": "^3.0.1",

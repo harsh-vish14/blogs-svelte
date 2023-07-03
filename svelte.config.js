@@ -8,15 +8,13 @@ import rehypeSlug from 'rehype-slug';
 
 const mdsvexOptions = {
 	extensions: ['.md'],
-	layout: {
-		_: './src/mdsvex.svelte'
-	},
+
 	remarkPlugins: [remarkUnwrapImages, [remarkToc, { tight: true }]],
 	rehypePlugins: [rehypeSlug],
 
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await shiki.getHighlighter({ theme: 'poimandres' });
+			const highlighter = await shiki.getHighlighter({ theme: 'material-theme-palenight' });
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }));
 			return `{@html \`${html}\` }`;
 		}
@@ -32,8 +30,7 @@ const config = {
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
 		adapter: adapter()
-	},
-	preprocess: vitePreprocess()
+	}
 };
 
 export default config;

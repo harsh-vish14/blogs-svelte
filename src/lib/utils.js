@@ -20,5 +20,5 @@ export function readMetadataFromMarkdownFiles() {
 }
 
 export const slugGenerator = (path) => {
-	return path.toLowerCase().replace(' ', '-');
+	return path.toLowerCase().replaceAll(' ', '-');
 };

@@ -2,6 +2,7 @@ import fs from 'fs';
 import marked from 'marked';
 import { json } from '@sveltejs/kit';
 import matter from 'gray-matter';
+import { compile } from 'mdsvex';
 
 function process_markdown(markdown) {
 	const match = /---\r?\n([\s\S]+?)\r?\n---/.exec(markdown);
@@ -9,7 +10,7 @@ function process_markdown(markdown) {
 	return { content };
 }
 
-function getPost(slug) {
+const getPost = async (slug) => {
 	const options = {
 		mangle: false,
 		headerIds: false
@@ -21,17 +22,21 @@ function getPost(slug) {
 
 	const { content } = process_markdown(markdown);
 	const { data } = matter(markdown);
+	console.log({ data });
 
-	const html = marked.parse(content, options);
+	const compiledResponse = await compile(content);
+
+	// console.log('compiledResponse is: ', compiledResponse);
 
 	return {
 		content,
-		html,
+		html: compiledResponse.code,
 		meta: data
 	};
-}
+};
 
-export function GET({ params }) {
-	const res = getPost(params.slug);
+export async function GET({ params }) {
+	const res = await getPost(params.slug);
+
 	return json(res);
 }
