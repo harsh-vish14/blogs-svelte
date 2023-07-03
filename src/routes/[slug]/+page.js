@@ -1,7 +1,6 @@
 import { error } from '@sveltejs/kit';
-import * as config from '../../lib/config';
-import { compile } from 'mdsvex';
 
+/** @type {import('./$types').PageLoad} */
 export async function load({ params }) {
 	try {
 		// const response = await fetch(`${config.domain}/api/post/${params.slug}`);

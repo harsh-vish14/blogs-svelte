@@ -4,7 +4,7 @@
 
 <div class="font-league-spartan relative h-24 flex items-center px-5">
 	<div class="w-fit h-fit mr-8">
-		<a href="http://localhost:5173/" class="hover:drop-shadow-[0px_0px_3px_#E54EFE]"> Home </a>
+		<a href="/" class="hover:drop-shadow-[0px_0px_3px_#E54EFE]"> Home </a>
 	</div>
 	<div class="w-fit h-fit">
 		<a

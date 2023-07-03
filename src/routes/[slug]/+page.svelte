@@ -1,5 +1,4 @@
-<script>
-	import { component } from './../../../.svelte-kit/output/server/nodes/1.js';
+<script lang="js">
 	import { formatDate } from '$lib/utils';
 	export let data;
 </script>
@@ -76,6 +75,6 @@
 			Every post is a Markdown file so contributing is simple as following the link below and
 			pressing the pencil icon inside GitHub to edit it.
 		</div>
-		<div class="blog"><a href="" target="_blank">Link to Github ></a></div>
+		<div class="blog"><a href={data.meta.postLink} target="_blank">Link to Github ></a></div>
 	</div>
 </article>

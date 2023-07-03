@@ -1,13 +1,14 @@
 ---
 title: Full Stack Todo web App - Part 1 (Frontend)
 description: Full stack - Frontend and backend of todo application. This is frontend implementation.
-bannerImage: 'src/public/blog/banner.png'
+bannerImage: 'https://firebasestorage.googleapis.com/v0/b/images-to-link-converter.appspot.com/o/banner.webp?alt=media&token=dd366c46-59e3-41c7-b6d8-0d66bc85fe98'
 date: '2023-07-03'
 categories:
   - HTML
   - CSS
   - JS
 published: true
+postLink: 'https://github.com/harsh-vish14/blogs-svelte/blob/master/src/posts/full-stack-todo-web-app---part-1-(frontend).md'
 ---
 
 In this `two-part tutorial`, we will be developing a todo application. In Part 1, we will focus on implementing the frontend using `HTML`, `CSS`, and `JavaScript`. Part 2 will cover the backend implementation using [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and [MongoDB](https://www.mongodb.com/).
@@ -35,7 +36,7 @@ To start the work first we need the HTML file lets make one `index.html`
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>TODO 14</title>
+		<title>TODO</title>
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 			rel="stylesheet"

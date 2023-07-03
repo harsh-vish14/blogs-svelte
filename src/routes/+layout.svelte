@@ -12,8 +12,6 @@
 			url: url.pathname
 		};
 	}
-
-	export let data;
 </script>
 
 <head>

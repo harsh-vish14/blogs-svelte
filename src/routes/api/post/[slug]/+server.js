@@ -1,5 +1,4 @@
 import fs from 'fs';
-import marked from 'marked';
 import { json } from '@sveltejs/kit';
 import matter from 'gray-matter';
 import { compile } from 'mdsvex';
