@@ -1,6 +1,6 @@
 .blog {
-	max-width: 700px;
-	text-wrap: balance;
+	max-width: 900px;
+	/* text-wrap: balance; */
 	transition: 500ms;
 	@apply text-xl;
 }
@@ -36,6 +36,14 @@ pre {
 	@apply p-5 text-lg;
 	overflow: auto;
 }
+pre::-webkit-scrollbar {
+	width: 2px;
+	border-left: 1px solid #e6ecf8;
+}
+pre::-webkit-scrollbar-thumb {
+	background-color: #5d657a;
+}
+
 blockquote {
 	@apply py-2 px-3 my-3 rounded-md;
 	background-color: #2c303a;

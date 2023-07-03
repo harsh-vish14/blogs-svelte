@@ -9,12 +9,12 @@ export async function load({ params }) {
 		// console.log({ responseData });
 		// return responseData;
 
-		const post = await import(`../../posts/${params.slug}.md`)
+		const post = await import(`../../posts/${params.slug}.md`);
 
 		return {
 			content: post.default,
 			meta: post.metadata
-		}
+		};
 	} catch (e) {
 		console.log({ e });
 		throw error(404, `Could not find ${params.slug}`);

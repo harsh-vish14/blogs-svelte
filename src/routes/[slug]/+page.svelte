@@ -21,6 +21,7 @@
 	<!-- Title   -->
 	<hgroup class="font-league-spartan">
 		<div class="h-auto w-full relative">
+			<!-- svelte-ignore a11y-img-redundant-alt -->
 			<img src={data.meta.bannerImage} alt="banner image" class="h-full w-full rounded-lg" />
 			<svg
 				width="105"

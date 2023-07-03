@@ -13,7 +13,7 @@
 				<svg
 					style="width: -webkit-fill-available;"
 					height="63"
-					class="absolute top-[5px] md:top-[20px] xl:top-[30px] z-[-2] left-[-10px]"
+					class="absolute top-[20px] z-[-2] left-[-10px]"
 					viewBox="0 0 549 63"
 					fill="none"
 					xmlns="http://www.w3.org/2000/svg"
