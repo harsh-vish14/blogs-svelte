@@ -7,28 +7,33 @@
 h1,
 h2,
 h3 {
-	@apply font-semibold;
+	@apply font-semibold mb-10 mt-32 capitalize;
 }
 h1 {
-	@apply text-6xl my-5;
+	@apply text-6xl;
 }
 h2 {
-	@apply text-5xl my-5;
+	@apply text-5xl;
 }
 h3 {
-	@apply text-4xl my-5;
+	@apply text-4xl;
 }
 
 li {
-	@apply text-xl my-7 leading-loose;
+	@apply text-xl my-4 leading-relaxed;
 }
 li::before {
 	content: '👉🏽';
 }
 
 p {
-	@apply font-normal ml-2 my-5;
+	@apply font-normal text-xl leading-relaxed ml-2 my-5;
 }
+
+p::first-letter {
+	text-transform: capitalize;
+}
+
 img {
 	@apply rounded-md m-auto;
 }
@@ -80,12 +85,12 @@ blockquote::before {
 }
 
 p code {
-	background-color: #000000;
-	@apply px-1 py-1 rounded-md;
+	background-color: #373942;
+	@apply p-1 mx-1 my-[10px] rounded-md;
 	width: fit-content;
 }
 li code {
-	background-color: #000000;
+	background-color: #373942;
 	@apply px-1 py-1 rounded-md;
 	width: fit-content;
 }

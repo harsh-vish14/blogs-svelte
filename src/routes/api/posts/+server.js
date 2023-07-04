@@ -2,6 +2,10 @@ import { json } from '@sveltejs/kit';
 import fs from 'fs';
 import matter from 'gray-matter';
 
+function sortPostsByDate(posts) {
+	return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+
 function readMetadataFromMarkdownFiles() {
 	const mdFiles = fs.readdirSync('./src/posts'); // Update the path to match your file directory
 	const metadataArray = [];
@@ -11,8 +15,9 @@ function readMetadataFromMarkdownFiles() {
 		const { data } = matter(markdown);
 		metadataArray.push(data);
 	});
+	const sortedPosts = sortPostsByDate(metadataArray);
 
-	return metadataArray;
+	return sortedPosts;
 }
 
 export async function GET() {

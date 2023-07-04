@@ -14,6 +14,7 @@
 	<meta name="author" content="Harshkumar Vishwakarma" />
 	<meta property="og:title" content={data.meta.title} />
 	<meta content={data.meta.bannerImage} property="og:image" />
+	<base target="_blank" />
 </svelte:head>
 
 <article class="mx-5">

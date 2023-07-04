@@ -13,7 +13,7 @@ published: true
 githubLink: 'https://github.com/harsh-vish14/blogs-svelte/blob/master/src/posts/todo-web-app.md'
 ---
 
-In this `two-part tutorial`, we will be developing a todo application. In Part 1, we will focus on implementing the frontend using `HTML`, `CSS`, and `JavaScript`. Part 2 will cover the backend implementation using [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and [MongoDB](https://www.mongodb.com/).
+In this `two-part tutorial`, we will be developing a todo application. In Part 1, we will focus on implementing the frontend using `HTML`, `CSS`, and `JavaScript`. [Part 2](https://blog-harshvish.vercel.app/todo-web-app-backend) will cover the backend implementation using [Node.js](https://nodejs.org/), [Express.js](https://expressjs.com/), and [MongoDB](https://www.mongodb.com/).
 
 For Part 1, our main goal is to create a `user interface` that allows users to manage their tasks. We will start by designing the layout using HTML and styling it with CSS. We'll create an input field where users can enter their tasks and a list to display the tasks.
 

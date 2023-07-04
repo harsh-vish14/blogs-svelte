@@ -7,7 +7,8 @@
 		"build": "vite build",
 		"preview": "vite preview",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"production": "npm run build && npm run preview"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^3.0.1",
