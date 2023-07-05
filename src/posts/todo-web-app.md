@@ -2,7 +2,7 @@
 title: Full Stack Todo web App - Part 1 (Frontend)
 description: Full stack - Frontend and backend of todo application. This is frontend implementation.
 slug: todo-web-app
-bannerImage: 'https://firebasestorage.googleapis.com/v0/b/images-to-link-converter.appspot.com/o/banner.webp?alt=media&token=dd366c46-59e3-41c7-b6d8-0d66bc85fe98'
+bannerImage: 'https://firebasestorage.googleapis.com/v0/b/images-to-link-converter.appspot.com/o/banner-1.webp?alt=media&token=e3df1dc6-fc65-4f1c-88ff-27b42a440bed'
 date: '2023-07-03'
 categories:
   - HTML
