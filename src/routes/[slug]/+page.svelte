@@ -57,7 +57,7 @@
 		</div>
 	</hgroup>
 	<!-- blog -->
-	<div class="flex gap-5 my-5 mb-10 opacity-60 font-league-spartan blog m-auto">
+	<div class="flex gap-5 my-5 mb-10 opacity-60 font-league-spartan blog m-auto uppercase">
 		{#each data.meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
