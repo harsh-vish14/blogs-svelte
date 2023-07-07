@@ -2,7 +2,17 @@
 	max-width: 900px;
 	/* text-wrap: balance; */
 	transition: 500ms;
-	@apply text-xl;
+	@apply text-xl m-auto xl:m-1;
+}
+.svelte-qhrnk4:where(aside.toc > nav) {
+	overflow: auto !important;
+}
+.svelte-qhrnk4::before {
+	content: '';
+}
+.svelte-qhrnk4:where(aside.toc > nav > ol > li.active) {
+	background: #373942 !important;
+	color: #e3e3e4 !important;
 }
 h1,
 h2,

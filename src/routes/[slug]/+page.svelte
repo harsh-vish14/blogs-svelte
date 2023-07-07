@@ -1,5 +1,21 @@
 <script lang="js">
 	import { formatDate } from '$lib/utils';
+	import Toc from 'svelte-toc';
+
+	// let table_of_content = [];
+	// if (true) {
+	// 	let ids = document.querySelectorAll('[id]');
+
+	// 	Array.prototype.forEach.call(ids, (el) => {
+	// 		if (el.localName.includes(`h2`)) {
+	// 			table_of_content.push({
+	// 				id: el.id,
+	// 				content: el.innerText
+	// 			});
+	// 		}
+	// 	});
+	// }
+
 	export let data;
 </script>
 
@@ -17,8 +33,16 @@
 	<base target="_blank" />
 </svelte:head>
 
-<article class="mx-5">
-	<!-- Title   -->
+<div class="fixed right-0 mx-5 overflow-hidden xl:block hidden">
+	<Toc>
+		<span let:idx let:heading slot="toc-item" style="overflow: hidden !important;">
+			{idx + 1}. {heading.innerText}
+		</span>
+	</Toc>
+</div>
+
+<article class="mx-5 blog">
+	<!-- blog header -->
 	<hgroup class="font-league-spartan">
 		<div class="h-auto w-full relative">
 			<!-- svelte-ignore a11y-img-redundant-alt -->
@@ -49,23 +73,31 @@
 	text-wrap: balance;"
 		>
 			<span>
-				Written By - <a href="https://harshvish.vercel.app/" target="_blank" class="text-pink"
-					>Harshkumar Vishwakarma</a
+				Written By - <a
+					href="https://harshvish.vercel.app/"
+					target="_blank"
+					class="text-pink before:hidden">Harshkumar Vishwakarma</a
 				>
 			</span><br />
 			<span>{formatDate(data.meta.date)}</span>
 		</div>
 	</hgroup>
-	<!-- blog -->
+	<!-- blog header -->
+	<!-- blog categories -->
 	<div class="flex gap-5 my-5 mb-10 opacity-60 font-league-spartan blog m-auto uppercase">
 		{#each data.meta.categories as category}
 			<span class="surface-4">&num;{category}</span>
 		{/each}
 	</div>
+	<!-- blog categories -->
+
+	<!-- blog body -->
 	<div class="blog m-auto font-league-spartan">
 		<svelte:component this={data.content} />
 	</div>
-	<!-- blog footer -->
+	<!-- blog body -->
+
+	<!-- blog footer-->
 	<div
 		class="m-auto mt-28 flex flex-col gap-8 font-league-spartan text-2xl bg-[#e54efe30] p-5 rounded-md"
 		style="max-width: 700px;
@@ -78,4 +110,5 @@
 		</div>
 		<div class="blog"><a href={data.meta.githubLink} target="_blank">Link to Github ></a></div>
 	</div>
+	<!-- blog footer-->
 </article>
