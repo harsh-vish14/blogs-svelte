@@ -47,7 +47,7 @@
 		</div>
 		<!-- card body end -->
 		<!-- card footer start -->
-		<div class="flex gap-5 opacity-80 mt-auto uppercase">
+		<div class="flex flex-wrap gap-x-5 opacity-80 mt-auto uppercase">
 			{#each post.categories as categorie}
 				<div>
 					#{categorie}
