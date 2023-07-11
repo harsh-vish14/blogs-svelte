@@ -67,11 +67,7 @@
 			</svg>
 		</div>
 		<h1 class="font-bold text-center text-5xl md:text-6xl xl:text-7xl my-10">{data.meta.title}</h1>
-		<div
-			class="font-normal text-lg opacity-90 m-auto"
-			style="max-width: 700px;
-	text-wrap: balance;"
-		>
+		<div class="font-normal text-lg opacity-90 m-auto" style="text-wrap: balance;">
 			<span>
 				Written By - <a
 					href="https://harshvish.vercel.app/"

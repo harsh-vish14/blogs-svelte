@@ -15,7 +15,7 @@
 
 <Header />
 
-<section class="flex gap-3 my-10 mx-3 flex-wrap justify-center">
+<section class="flex gap-3 my-10 mx-3 flex-wrap justify-start">
 	{#each data.posts as post}
 		<PostCard {post} />
 	{/each}
