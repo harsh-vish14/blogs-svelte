@@ -5,7 +5,7 @@
 
 <a href={post.slug} class="w-fit">
 	<div
-		class="p-3 border border-[#2C303A] hover:bg-[#2C303A] transition-all max-w-sm min-w-[300px] rounded-md font-league-spartan h-[480px]"
+		class="p-3 border border-[#2C303A] hover:bg-[#2C303A] transition-all max-w-sm min-w-[300px] rounded-md font-league-spartan h-[540px]"
 	>
 		<!-- card header start -->
 		<div style="height: 221px; width: 359px;" class="relative">
