@@ -4,12 +4,19 @@
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/logo.png" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width" />
 	%sveltekit.head%
 </head>
 
 <body data-sveltekit-preload-data="hover" class="bg-primary-dark text-white">
 	<div style="display: contents">%sveltekit.body%</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			once: true,
+		});
+	</script>
 </body>
 
 </html>

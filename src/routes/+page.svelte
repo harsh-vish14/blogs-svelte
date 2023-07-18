@@ -15,8 +15,10 @@
 
 <Header />
 
-<section class="flex gap-3 my-10 mx-3 flex-wrap justify-start">
+<section class="flex gap-3 my-10 mx-3 flex-wrap justify-around">
 	{#each data.posts as post}
-		<PostCard {post} />
+		<div data-aos="zoom-in">
+			<PostCard {post} />
+		</div>
 	{/each}
 </section>

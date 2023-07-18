@@ -3,7 +3,7 @@
 </script>
 
 <div
-	class="font-semibold md:text-6xl xl:text-7xl text-4xl relative flex gap-5 justify-evenly items-center min-h-[60vh] pt-10 font-league-spartan"
+	class="font-semibold md:text-6xl xl:text-7xl text-4xl relative flex gap-5 justify-evenly items-center min-h-[40vh] pt-10 font-league-spartan"
 >
 	<div class="sm:w-1/2 w-full px-5 sm:px-0">
 		<h1 class="sm:text-left text-center">
