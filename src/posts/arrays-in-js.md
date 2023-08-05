@@ -60,6 +60,8 @@ console.log(fruits);
 // output: [ 'new Value', 'apple', 'banana', 'orange', 'grape' ]
 ```
 
+> Time Complexity is O(N) because we adding value at start array
+
 ## adding in-between
 
 To add value in between we can use splice `array.splice(index, delete_count, new_value)`
@@ -69,6 +71,8 @@ fruits.splice(2, 0, 'new Value');
 console.log(fruits);
 // output: [ 'apple', 'banana', 'new Value', 'orange', 'grape' ]
 ```
+
+> Time Complexity is O(N) because we adding value in-between array
 
 ## spread syntax in arrays?
 
@@ -89,6 +93,8 @@ console.log(copiedArray);
 // Output: [1, 2, 3]
 ```
 
+> Time Complexity is O(N) because we have travel whole array
+
 ### Merging arrays:
 
 You can merge two or more arrays into a single array using the spread syntax. This is a quick and efficient way to combine arrays without modifying the original ones.
@@ -102,6 +108,8 @@ console.log(mergedArray);
 // Output: [1, 2, 3, 4]
 ```
 
+> Time Complexity is O(M) + O(N) because we have travel both arrays so each
+
 ### Adding elements to an array:
 
 The spread syntax can be used to add elements to an existing array while keeping its original content intact.
@@ -113,6 +121,8 @@ const newArray = [...originalArray, 4, 5];
 console.log(newArray);
 // Output: [1, 2, 3, 4, 5]
 ```
+
+> Time Complexity is O(N) because we have travel whole arrays so each
 
 ### Passing multiple arguments to a function:
 
