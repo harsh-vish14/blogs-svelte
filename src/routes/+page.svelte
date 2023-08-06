@@ -12,6 +12,9 @@
 <!-- <svelte:head>
 	<title>{'some title'}</title>
 </svelte:head> -->
+<head>
+	<title>Harsh ✌🏽 / Blogs</title>
+</head>
 
 <Header />
 
