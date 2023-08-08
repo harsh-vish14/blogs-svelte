@@ -3,7 +3,7 @@ title: Arrays in JavaScript
 description: Detail information about arrays in JavaScript, everything from adding to removing and working with arrays.
 slug: arrays-in-js
 bannerImage: 'https://firebasestorage.googleapis.com/v0/b/images-to-link-converter.appspot.com/o/banner-6.webp?alt=media&token=88e73f51-5cad-44ba-b000-05b71b5a004d'
-date: '2023-07-11'
+date: '2023-08-06'
 categories:
   - JS
   - DATA-STRUCTURE
